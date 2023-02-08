@@ -1,0 +1,38 @@
+<template name="addProfile">
+    <div class="row justify-content-center">
+        <div class="col-lg-3 text-center">
+            <button class="btn btn-primary js-addModal">Add a Profile</button>
+        </div>
+    </div>
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-text">First and last name</span>
+                        <input id="fname" type="text" aria-label="First name" class="form-control">
+                        <input id="lname" type="text" aria-label="Last name" class="form-control">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Age</span>
+                        <input id="age" type="number" min=16 max=120 class="form-control" placeholder="Age"
+                            aria-label="Age">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Location</span>
+                        <input id="location" type="text" class="form-control" placeholder="Location"
+                            aria-label="Location">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary js-saveProfile">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

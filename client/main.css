@@ -2,3 +2,12 @@ body {
   padding: 10px;
   font-family: sans-serif;
 }
+
+.bi {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.imgFrame {
+  height: 200px;
+}

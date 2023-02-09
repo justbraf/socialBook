@@ -1,11 +1,12 @@
-<template name="viewProfiles">
+<template name="listProfiles">
     <div class="row">
         {{#each profiles}}
         <div class="col-lg-4 text-center">
             <div class="border border-2 border-primary m-3 p-3">
-                <img src="profile.png" alt="">
+                <img class="w-100" src="{{profile}}" alt="">
                 <p class="fs-3">{{first}} {{surname}}, {{age}}</p>
-                <p class="fs-4">{{address}}</p>
+                <i class="bi bi-binoculars js-view"></i>
+                <i class="bi bi-file-earmark-x js-delete"></i>
             </div>
         </div>
         {{/each}}

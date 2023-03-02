@@ -25,3 +25,6 @@ hot-module-replacement@0.5.2  # Update code in development without reloading the
 blaze-hot               # Update files using Blaze's API with HMR
 autopublish
 insecure
+barbatus:stars-rating
+accounts-github
+accounts-password

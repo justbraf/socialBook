@@ -17,9 +17,22 @@ Template.listProfiles.events({
         document.querySelector('#viewLocation').innerHTML = `location: ${that.address}`
         viewModal.show()
     },
-    'click .js-delete'() {
+    'click .js-delete'(event) {
         let that = this
-        console.debug("deleting", that._id)
-        socialdb.remove({ "_id": that._id })
+        const confirmModal = new bootstrap.Modal('#confirmDelModal', {})
+        document.querySelector("#delID").value = that._id
+        confirmModal.show()
+        event.target.parentNode.parentNode.classList.add('deleteIt')
+    },
+    'click .myRating'(event) {
+        // console.log(event.currentTarget)
+        // console.log("rating: ", $("#" + event.currentTarget.id).data("userrating"))
+        socialdb.update({
+            "_id": event.currentTarget.id
+        },{
+            $set:{
+                rating: $("#" + event.currentTarget.id).data("userrating")
+            }
+        })
     }
 })

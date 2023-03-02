@@ -11,3 +11,12 @@ body {
 .imgFrame {
   height: 200px;
 }
+
+.prof {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.hideIt {
+  opacity: 0;
+}

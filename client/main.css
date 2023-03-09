@@ -20,3 +20,7 @@ body {
 .hideIt {
   opacity: 0;
 }
+
+.errBox {
+  border: 3px solid red !important;
+}

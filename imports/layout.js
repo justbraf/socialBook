@@ -1,3 +1,6 @@
+import './navBar.html'
+import './navBar.js'
+
 import './listProfiles.html'
 import './listProfiles.js'
 
@@ -12,3 +15,6 @@ import './confirmDel.js'
 
 import './loginForm.html'
 import './loginForm.js'
+
+import './createUserForm.html'
+import './createUserForm.js'
